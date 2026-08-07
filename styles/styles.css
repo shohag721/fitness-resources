@@ -7,6 +7,11 @@
     font-family: Inter;
 }
 /* Shared Style */
+.mw-80{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
 .btn{
     color: white;
     border: none;
@@ -16,13 +21,16 @@
     font-size: 1.1rem;
     font-weight: 700;
 }
+#dn-btn{
+    background: transparent;
+    border: 1px solid #FFFFFF;
+}
 
 /* nav styles */
 .nav-container{
+    margin-top: 20px;
     color:white;
-    max-width: 80%;
     display: flex;
-    margin: 20px auto;
     align-items: center;
 }
 .nav-container p{
@@ -42,7 +50,69 @@
 .nav-container i{
     display: none;
 }
-
+/* hero section desing */
+.hero-container{
+    color:white;
+    height: 580px;
+}
+.hero-info{
+    max-width: 50%;
+}
+.hero-info h2{
+    font-size: 4.5rem;
+    font-weight: 900;
+}
+.hero-info p{
+    margin-top: 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+.hero-btn{
+    margin-top: 30px;
+}
+.hero-img{
+    width: 100%;
+    max-width: 50%;
+    justify-content: end;
+    position: relative;
+}
+.hero-img img{
+    height: 100%;
+}
+.tooltip1{
+    right: -14%;
+    padding: 16px 24px;
+    position: absolute;
+    background-color: rgba(51, 48, 48, 0.863);
+    border-radius: 12px;
+    top:20%;
+    backdrop-filter: blur(2px);
+}
+.tooltip1 h2{
+    font-size:2.7rem;
+    font-weight:900;
+}
+.tooltip2{
+    align-items: center;
+    left: 16%;
+    padding: 16px 24px;
+    position: absolute;
+    background-color: rgba(49, 47, 47, 0.836);
+    border-radius: 12px;
+    top:70%;
+    backdrop-filter: blur(2px);
+}
+.tooltip2 h2{
+    font-size:1.7rem;
+    font-weight:900;
+}
+.ball{
+    height: 50px;
+    width: 50px;
+    background-color: #E6533C;
+    border-radius: 50px;
+}
 /* Small Devices Responcive */
 
 @media screen and (max-width:576px) {
@@ -55,6 +125,58 @@
     }
     .nav-container i{
     display: inline;
+}
+.hero-container{
+    width: 100%;
+    max-width: 90%;
+    flex-direction: column;
+}
+.hero-info{
+    max-width: 100%;
+}
+.hero-info h2{
+    margin-top: 50px;
+    max-width: 60%;
+    font-size: 2.1rem;
+}
+.hero-info p{
+    max-width: 274px;
+}
+.hero-btn{
+    width: 100%;
+}
+.btn{
+    font-size: 0.8rem;
+}
+.hero-img {
+    margin-top: 50px;
+    max-width: 100%;
+}
+.tooltip1 {
+    top: 6%;
+    right: 3%;
+    padding: 10px 15px;
+}
+.tooltip1 h2 {
+    font-size: 1.7rem;
+}
+.tooltip1 p{
+    font-size: 0.7rem;
+}
+.tooltip2 {
+    left:6%;
+    top: 48%;
+    padding: 8px 15px;
+}
+.tooltip2 h2 {
+    font-size: 1.1rem;
+}
+.tooltip2 p{
+    font-size: 0.7rem;
+}
+.ball {
+    height: 30px;
+    width: 30px;
 }
 }
 
