@@ -187,8 +187,149 @@
     object-fit: cover;
     object-position: -420px -40px;
 }
+/* grid section */
+.training-section{
+    margin-top: 60px;
+}
+.section-header{
+    width: 680px;
+}
+.section-header h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.section-header p{
+    margin-top: 14px;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.training-card {
+    position: relative;
+    height: 190px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #222;
+}
+.training-card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+/* =========================
+   Dark Overlay
+========================= */
+
+.training-card::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.05)
+    );
+
+    z-index: 1;
+}
 
 
+/* =========================
+   Text Overlay
+========================= */
+
+.overlay {
+    position: absolute;
+    left: 20px;
+    bottom: 18px;
+    z-index: 2;
+    color: white;
+}
+
+.overlay h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.overlay p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+/* =========================
+   Hover Effect
+========================= */
+
+.training-card:hover img {
+    transform: scale(1.08);
+}
+
+.training-card:hover::after {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.1)
+    );
+}
+
+
+/* =========================
+   Different Overlay Colors
+========================= */
+
+.card-1::after {
+    background: linear-gradient(
+        to right,
+        rgba(0, 180, 150, 0.65),
+        rgba(0, 0, 0, 0.15)
+    );
+}
+
+.card-2::after {
+    background: linear-gradient(
+        to right,
+        rgba(170, 45, 45, 0.65),
+        rgba(0, 0, 0, 0.15)
+    );
+}
+
+.card-3::after {
+    background: linear-gradient(
+        to right,
+        rgba(70, 90, 100, 0.6),
+        rgba(0, 0, 0, 0.15)
+    );
+}
+
+.card-4::after {
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.15)
+    );
+}
+
+.card-5::after {
+    background: linear-gradient(
+        to right,
+        rgba(65, 192, 82, 0.8),
+        rgba(55, 255, 82, 0.247)
+    );
+}
+
+.card-6::after {
+    background: linear-gradient(
+        to right,
+        rgba(50, 100, 190, 0.65),
+        rgba(0, 0, 0, 0.15)
+    );
+}
 /* Small Devices Responcive */
 
 @media screen and (max-width:576px) {
