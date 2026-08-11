@@ -376,4 +376,32 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 50px;
 }
+
+/* Mile Section */
+
+.exta-mile {
+    margin-top: 80px;
+}
+.exra-content{
+    margin-top: 45px;
+    width: 263px;
+}
+.exra-content h2 {
+    margin-top: 15px;
+    font-size: 2.25rem;
+}
+.exra-content p{
+    text-align: left;
+    font-size: 12px;
+}
+.exra-content button{
+    padding: 16px 71px;
+}
+     .mile-img {
+        margin-top: 58px;
+        width: 256px;
+    }
+    .mile-img>img {
+    object-position: -487px -99px;
+}
 }
