@@ -261,24 +261,6 @@
     color: rgba(255, 255, 255, 0.85);
 }
 
-
-/* =========================
-   Hover Effect
-========================= */
-
-.training-card:hover img {
-    transform: scale(1.08);
-}
-
-.training-card:hover::after {
-    background: linear-gradient(
-        to top,
-        rgba(0, 0, 0, 0.75),
-        rgba(0, 0, 0, 0.1)
-    );
-}
-
-
 /* =========================
    Different Overlay Colors
 ========================= */
@@ -287,7 +269,7 @@
     background: linear-gradient(
         to right,
         rgba(0, 180, 150, 0.65),
-        rgba(0, 0, 0, 0.15)
+        rgba(0, 180, 150, 0.35)
     );
 }
 
@@ -295,7 +277,7 @@
     background: linear-gradient(
         to right,
         rgba(170, 45, 45, 0.65),
-        rgba(0, 0, 0, 0.15)
+        rgba(170, 45, 45, 0.35)
     );
 }
 
@@ -303,7 +285,7 @@
     background: linear-gradient(
         to right,
         rgba(70, 90, 100, 0.6),
-        rgba(0, 0, 0, 0.15)
+        rgba(70, 90, 100, 0.3)
     );
 }
 
@@ -311,15 +293,15 @@
     background: linear-gradient(
         to right,
         rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.15)
+        rgba(0, 0, 0, 0.4)
     );
 }
 
 .card-5::after {
     background: linear-gradient(
         to right,
-        rgba(65, 192, 82, 0.8),
-        rgba(55, 255, 82, 0.247)
+        rgba(65, 192, 82, 0.6),
+        rgba(65, 192, 82, 0.4)
     );
 }
 
@@ -327,8 +309,50 @@
     background: linear-gradient(
         to right,
         rgba(50, 100, 190, 0.65),
-        rgba(0, 0, 0, 0.15)
+        rgba(50, 100, 190, 0.35)
     );
+}
+/* team-grid */
+.team-header{
+    margin: 0 auto;
+    width: 671px;
+    margin-top: 88px;
+    border: 1px solid white;
+}
+.team-header h2{
+    font-weight: 700;
+}
+.team-grid{
+    margin-top: 58px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+.team-card{
+    display: grid;
+    padding: 10px;
+}
+.team-card img{
+    width: 340px;
+    height: 272px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.team-info{
+    margin-top: -70px;
+    margin-left: 20px;
+}
+.team-info h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.team-info p{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
 }
 /* Small Devices Responcive */
 
