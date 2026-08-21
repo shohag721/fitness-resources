@@ -375,7 +375,45 @@
     object-position: -87px 19px;
 }
 
+/* footer */
+.footer{
+    height: 489px;
+    background-color: #222222;
+    margin-top: 80px;
+}
+.footer-container{
+    padding-top: 88px;
+}
 
+.footer-head{
+    /* border:1px solid white; */
+    width: 443px;
+    height: 176px;
+}
+.footer-head h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #E6533C;
+}
+.footer-mid{
+    width: 181px;
+    margin-left: 101px;
+    padding: 10px;
+    /* border:1px solid rgb(0, 238, 255); */
+}
+.footer-end{
+    width: 181px;
+    margin-left: 152px;
+    padding: 10px;
+    /* border:1px solid rgb(179, 255, 0); */
+}
+footer hr ,p {
+    margin-top: 30px;
+}
+.footer-head ul, .footer-mid ul, .footer-end ul{
+    margin-top: 20px;
+    line-height: 40px;
+}
 
 /* Small Devices Responcive */
 
@@ -523,6 +561,9 @@
 }
 .card-3 , .card-6{
     display: none;
+}
+.team-grid {
+    grid-template-columns: repeat(1, 1fr);
 }
 }
 
