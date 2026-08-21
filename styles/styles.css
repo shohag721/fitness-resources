@@ -217,6 +217,9 @@
     object-fit: cover;
     transition: transform 0.4s ease;
 }
+.card-3 , .card-6{
+    display:grid;
+}
 /* =========================
    Dark Overlay
 ========================= */
@@ -317,10 +320,13 @@
     margin: 0 auto;
     width: 671px;
     margin-top: 88px;
-    border: 1px solid white;
 }
 .team-header h2{
     font-weight: 700;
+}
+.team-header p{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
 }
 .team-grid{
     margin-top: 58px;
@@ -354,6 +360,22 @@
     font-weight: 700;
     color: rgba(255, 255, 255, 0.5);
 }
+.col-span-2 {
+    grid-column:span 2 / span 2;
+}
+.card-3 , .card-6{
+    display: inline;
+}
+.card-2 img{
+    height: 294px;
+     object-position: -300px -20px;
+}
+.card-4 img{
+    height: 273px;
+    object-position: -87px 19px;
+}
+
+
 /* Small Devices Responcive */
 
 @media screen and (max-width:576px) {
@@ -481,7 +503,27 @@
     object-position: -71px -3px;
     border-radius: 18px;
 }
+.section-header {
+    width: 100%;
+    max-width: 90%;
 }
+.team-header{
+    width: 100%;
+    max-width: 90%;
+}
+.grid{
+    grid-template-columns: repeat(2,1fr);
+}
+.training-card img{
+    width: 100%;
+}
+.col-span-2 {
+    grid-column:span 1 / span 1;
+}
+.card-3 , .card-6{
+    display: none;
+}
+
 
 /* Medium Devices Responcive */
 
