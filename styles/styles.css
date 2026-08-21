@@ -376,6 +376,7 @@
 }
 
 
+
 /* Small Devices Responcive */
 
 @media screen and (max-width:576px) {
@@ -523,7 +524,7 @@
 .card-3 , .card-6{
     display: none;
 }
-
+}
 
 /* Medium Devices Responcive */
 
